@@ -1,0 +1,27 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ns: <http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?programme ?programmeDescription (SUM(?activityDuration) AS ?totalDuration)
+WHERE {
+    # Select programs that include both mental and physical activities
+    ?programme rdf:type ns:Programme_de_Bien-Être .
+    ?programme ns:comprend ?activity .
+
+    # Filter for mental and physical activities
+    { ?activity rdf:type ns:Activité_Mentale . }
+    UNION
+    { ?activity rdf:type ns:Activité_Physique . }
+
+    # Retrieve the duration and description of the activities
+    ?activity ns:durée ?activityDuration .
+    ?activity ns:description ?activityDescription .
+
+    # Filter to ensure programs are complete
+    ?programme rdf:type ns:Programme_Complet .
+}
+GROUP BY ?programme ?programmeDescription
+HAVING (SUM(?activityDuration) > 0)
+ORDER BY DESC(?totalDuration)
