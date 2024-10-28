@@ -1,1180 +1,965 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19"
+<rdf:RDF xmlns="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19/"
+     xml:base="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19">
-    <Prefix name="" IRI="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19/"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#Activité"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Activité_Mentale"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Activité_Physique"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Calculateur"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Coach"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Communauté"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Discussion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fil_de_Discussion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gestion_de_la_Santé"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gestion_des_Communautés"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gestion_des_Objectifs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gestion_des_Programmes"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gestion_des_Ressources"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gestion_des_Utilisateurs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Groupe_Intérêt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Groupe_de_Soutien"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Indicateur_Mental"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Indicateur_Physique"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Indicateur_de_Santé"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Objectif_Mental"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Objectif_Physique"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Objectif_de_Santé"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Outil"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Programme_Complet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Programme_Spécialisé"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Programme_de_Bien-Être"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rapport_Mental"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rapport_Physique"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rapport_de_Santé"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ressource_de_Bien-Être"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Suivi_Mental"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Suivi_Objectif"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Suivi_Physique"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Test_de_Bien-Être"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Utilisateur"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Événement_de_Partage"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#a_pour_coach"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#a_pour_suivi"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#associeOutil"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#comprend"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#est_suivi_par"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#est_type"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#lié_à"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#organise"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#participerÀ"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#suit"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#évalue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#date"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#date_de_début"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#date_de_fin"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#decription_communauté"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#description_programme"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#description_ressource"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#description_sante"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#durée"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#email"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#fréquence"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#niveau"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#nom"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#nom_Objectif_de_Santé"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#nom_communauté"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#nom_ressource"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#progrès"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#score"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#spécialité"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#sujet"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#typeCalcul"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#typeEvaluation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#âge"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Activité_Course"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Activité_Méditation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Apprendre_Méditation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Coach1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Coach2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CommunauteBienEtre"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Courir_Marathon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Discussion1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Evenement1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GroupeYoga"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GuideNutrtion"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#IMCCalculateur"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Indicateur_BMI"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Indicateur_Stress"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ProgrammeGestionStress"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Programme_Complet_Santé"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Programme_Spécialisé_Yoga"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Rapport_BMI_Hebdomadaire"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Rapport_Stress_Mensuel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Suivi_Course_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Suivi_Méditation_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TestStress"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Utilisateur1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Utilisateur2"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#Calculateur"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-            <Class IRI="#Calculateur"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Groupe_de_Soutien"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#organise"/>
-            <Class IRI="#Événement_de_Partage"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Objectif_Mental"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#a_pour_suivi"/>
-            <Class IRI="#Suivi_Mental"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Objectif_Physique"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#a_pour_suivi"/>
-            <Class IRI="#Suivi_Physique"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Programme_Complet"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#comprend"/>
-            <Class IRI="#Programme_Complet"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Programme_Spécialisé"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#comprend"/>
-            <Class IRI="#Programme_Spécialisé"/>
-        </ObjectAllValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Rapport_de_Santé"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#lié_à"/>
-            <Class IRI="#Indicateur_Mental"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Rapport_de_Santé"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#lié_à"/>
-            <Class IRI="#Indicateur_Physique"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Test_de_Bien-Être"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-            <Class IRI="#Test_de_Bien-Être"/>
-        </ObjectMinCardinality>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Activité"/>
-        <Class IRI="#Gestion_des_Programmes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Activité_Mentale"/>
-        <Class IRI="#Activité"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Activité_Physique"/>
-        <Class IRI="#Activité"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Calculateur"/>
-        <Class IRI="#Outil"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Coach"/>
-        <Class IRI="#Gestion_des_Utilisateurs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Communauté"/>
-        <Class IRI="#Gestion_des_Communautés"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Discussion"/>
-        <Class IRI="#Gestion_des_Communautés"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fil_de_Discussion"/>
-        <Class IRI="#Discussion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Groupe_Intérêt"/>
-        <Class IRI="#Communauté"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Groupe_de_Soutien"/>
-        <Class IRI="#Communauté"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Indicateur_Mental"/>
-        <Class IRI="#Indicateur_de_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Indicateur_Physique"/>
-        <Class IRI="#Indicateur_de_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Indicateur_de_Santé"/>
-        <Class IRI="#Gestion_de_la_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Objectif_Mental"/>
-        <Class IRI="#Objectif_de_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Objectif_Physique"/>
-        <Class IRI="#Objectif_de_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Objectif_de_Santé"/>
-        <Class IRI="#Gestion_des_Objectifs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Outil"/>
-        <Class IRI="#Gestion_des_Ressources"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Programme_Complet"/>
-        <Class IRI="#Programme_de_Bien-Être"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Programme_Spécialisé"/>
-        <Class IRI="#Programme_de_Bien-Être"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Programme_de_Bien-Être"/>
-        <Class IRI="#Gestion_des_Programmes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rapport_Mental"/>
-        <Class IRI="#Rapport_de_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rapport_Physique"/>
-        <Class IRI="#Rapport_de_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rapport_de_Santé"/>
-        <Class IRI="#Gestion_de_la_Santé"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ressource_de_Bien-Être"/>
-        <Class IRI="#Gestion_des_Ressources"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Suivi_Mental"/>
-        <Class IRI="#Suivi_Objectif"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Suivi_Objectif"/>
-        <Class IRI="#Gestion_des_Objectifs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Suivi_Physique"/>
-        <Class IRI="#Suivi_Objectif"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Test_de_Bien-Être"/>
-        <Class IRI="#Outil"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Utilisateur"/>
-        <Class IRI="#Gestion_des_Utilisateurs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Événement_de_Partage"/>
-        <Class IRI="#Discussion"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Activité_Mentale"/>
-        <Class IRI="#Activité_Physique"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Coach"/>
-        <Class IRI="#Utilisateur"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Groupe_Intérêt"/>
-        <Class IRI="#Groupe_de_Soutien"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Indicateur_Mental"/>
-        <Class IRI="#Indicateur_Physique"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Objectif_Mental"/>
-        <Class IRI="#Objectif_Physique"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Programme_Complet"/>
-        <Class IRI="#Programme_Spécialisé"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Rapport_Mental"/>
-        <Class IRI="#Rapport_Physique"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Suivi_Mental"/>
-        <Class IRI="#Suivi_Physique"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Activité_Physique"/>
-        <NamedIndividual IRI="#Activité_Course"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Activité_Mentale"/>
-        <NamedIndividual IRI="#Activité_Méditation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Objectif_Mental"/>
-        <NamedIndividual IRI="#Apprendre_Méditation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Objectif_Physique"/>
-        <NamedIndividual IRI="#Courir_Marathon"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Indicateur_Physique"/>
-        <NamedIndividual IRI="#Indicateur_BMI"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Indicateur_Mental"/>
-        <NamedIndividual IRI="#Indicateur_Stress"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Programme_Complet"/>
-        <NamedIndividual IRI="#Programme_Complet_Santé"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Programme_Spécialisé"/>
-        <NamedIndividual IRI="#Programme_Spécialisé_Yoga"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Rapport_Physique"/>
-        <NamedIndividual IRI="#Rapport_BMI_Hebdomadaire"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Rapport_Mental"/>
-        <NamedIndividual IRI="#Rapport_Stress_Mensuel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Suivi_Physique"/>
-        <NamedIndividual IRI="#Suivi_Course_1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Suivi_Mental"/>
-        <NamedIndividual IRI="#Suivi_Méditation_1"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#organise"/>
-        <NamedIndividual IRI="#CommunauteBienEtre"/>
-        <NamedIndividual IRI="#Evenement1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#associeOutil"/>
-        <NamedIndividual IRI="#GuideNutrtion"/>
-        <NamedIndividual IRI="#IMCCalculateur"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#associeOutil"/>
-        <NamedIndividual IRI="#ProgrammeGestionStress"/>
-        <NamedIndividual IRI="#TestStress"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#comprend"/>
-        <NamedIndividual IRI="#Programme_Complet_Santé"/>
-        <NamedIndividual IRI="#Activité_Course"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#comprend"/>
-        <NamedIndividual IRI="#Programme_Complet_Santé"/>
-        <NamedIndividual IRI="#Activité_Méditation"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#comprend"/>
-        <NamedIndividual IRI="#Programme_Spécialisé_Yoga"/>
-        <NamedIndividual IRI="#Activité_Méditation"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#lié_à"/>
-        <NamedIndividual IRI="#Rapport_BMI_Hebdomadaire"/>
-        <NamedIndividual IRI="#Indicateur_BMI"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#lié_à"/>
-        <NamedIndividual IRI="#Rapport_Stress_Mensuel"/>
-        <NamedIndividual IRI="#Indicateur_Stress"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#a_pour_suivi"/>
-        <NamedIndividual IRI="#Suivi_Course_1"/>
-        <NamedIndividual IRI="#Courir_Marathon"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#est_suivi_par"/>
-        <NamedIndividual IRI="#Suivi_Course_1"/>
-        <NamedIndividual IRI="#Utilisateur2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#a_pour_suivi"/>
-        <NamedIndividual IRI="#Suivi_Méditation_1"/>
-        <NamedIndividual IRI="#Apprendre_Méditation"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#est_suivi_par"/>
-        <NamedIndividual IRI="#Suivi_Méditation_1"/>
-        <NamedIndividual IRI="#Utilisateur1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#a_pour_coach"/>
-        <NamedIndividual IRI="#Utilisateur1"/>
-        <NamedIndividual IRI="#Coach1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#participerÀ"/>
-        <NamedIndividual IRI="#Utilisateur1"/>
-        <NamedIndividual IRI="#Discussion1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#a_pour_coach"/>
-        <NamedIndividual IRI="#Utilisateur2"/>
-        <NamedIndividual IRI="#Coach2"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_programme"/>
-        <NamedIndividual IRI="#Activité_Course"/>
-        <Literal>Course à pied de 5 km</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_programme"/>
-        <NamedIndividual IRI="#Activité_Course"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_programme"/>
-        <NamedIndividual IRI="#Activité_Méditation"/>
-        <Literal>Séance de méditation guidée</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#durée"/>
-        <NamedIndividual IRI="#Activité_Méditation"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description"/>
-        <NamedIndividual IRI="#Apprendre_Méditation"/>
-        <Literal>Objectif pour améliorer la concentration</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom"/>
-        <NamedIndividual IRI="#Coach1"/>
-        <Literal>Amina</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#spécialité"/>
-        <NamedIndividual IRI="#Coach1"/>
-        <Literal>Nutrition</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom"/>
-        <NamedIndividual IRI="#Coach2"/>
-        <Literal>Riad</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#spécialité"/>
-        <NamedIndividual IRI="#Coach2"/>
-        <Literal>Santé mentale</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#decription_communauté"/>
-        <NamedIndividual IRI="#CommunauteBienEtre"/>
-        <Literal>Groupe dédié au soutien mental et physique</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom_communauté"/>
-        <NamedIndividual IRI="#CommunauteBienEtre"/>
-        <Literal>Bien-Être et Santé</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description"/>
-        <NamedIndividual IRI="#Courir_Marathon"/>
-        <Literal>Objectif pour courir un marathon</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#sujet"/>
-        <NamedIndividual IRI="#Discussion1"/>
-        <Literal>Conseils pour une meilleure santé mentale</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#sujet"/>
-        <NamedIndividual IRI="#Evenement1"/>
-        <Literal>Atelier de yoga pour débutants</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#decription_communauté"/>
-        <NamedIndividual IRI="#GroupeYoga"/>
-        <Literal>Groupe pour les amateurs de yoga</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom_communauté"/>
-        <NamedIndividual IRI="#GroupeYoga"/>
-        <Literal>Passion Yoga</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_ressource"/>
-        <NamedIndividual IRI="#IMCCalculateur"/>
-        <Literal>Permet de calculer l&apos;indice de masse corporelle&quot; et typeCalcul &quot;Calcul de l&apos;IMC&quot;</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom_ressource"/>
-        <NamedIndividual IRI="#IMCCalculateur"/>
-        <Literal>Calculateur d&apos;IMC</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#typeCalcul"/>
-        <NamedIndividual IRI="#IMCCalculateur"/>
-        <Literal>Calcul de l&apos;IMC</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#niveau"/>
-        <NamedIndividual IRI="#Indicateur_BMI"/>
-        <Literal>Moyen</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#score"/>
-        <NamedIndividual IRI="#Indicateur_BMI"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#niveau"/>
-        <NamedIndividual IRI="#Indicateur_Stress"/>
-        <Literal>Élevé</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#score"/>
-        <NamedIndividual IRI="#Indicateur_Stress"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.8</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_programme"/>
-        <NamedIndividual IRI="#Programme_Complet_Santé"/>
-        <Literal>Programme de bien-être complet</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#fréquence"/>
-        <NamedIndividual IRI="#Programme_Complet_Santé"/>
-        <Literal>Hebdomadaire</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_programme"/>
-        <NamedIndividual IRI="#Programme_Spécialisé_Yoga"/>
-        <Literal>Programme de yoga spécialisé</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#fréquence"/>
-        <NamedIndividual IRI="#Programme_Spécialisé_Yoga"/>
-        <Literal>Mensuel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#date"/>
-        <NamedIndividual IRI="#Rapport_BMI_Hebdomadaire"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-07T14:00:00</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_sante"/>
-        <NamedIndividual IRI="#Rapport_BMI_Hebdomadaire"/>
-        <Literal>Rapport BMI hebdomadaire</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#date"/>
-        <NamedIndividual IRI="#Rapport_Stress_Mensuel"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-15T10:30:00</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_sante"/>
-        <NamedIndividual IRI="#Rapport_Stress_Mensuel"/>
-        <Literal>Rapport de stress mensuel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#progrès"/>
-        <NamedIndividual IRI="#Suivi_Course_1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">75</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#progrès"/>
-        <NamedIndividual IRI="#Suivi_Méditation_1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#description_ressource"/>
-        <NamedIndividual IRI="#TestStress"/>
-        <Literal>Évaluation du niveau de stress</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom_ressource"/>
-        <NamedIndividual IRI="#TestStress"/>
-        <Literal>Test de Stress</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#typeEvaluation"/>
-        <NamedIndividual IRI="#TestStress"/>
-        <Literal>Stress</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#email"/>
-        <NamedIndividual IRI="#Utilisateur1"/>
-        <Literal>sami@gmail.com</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom"/>
-        <NamedIndividual IRI="#Utilisateur1"/>
-        <Literal>Sami</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#âge"/>
-        <NamedIndividual IRI="#Utilisateur1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#email"/>
-        <NamedIndividual IRI="#Utilisateur2"/>
-        <Literal>lina@gmail.com</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nom"/>
-        <NamedIndividual IRI="#Utilisateur2"/>
-        <Literal>Lina</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#âge"/>
-        <NamedIndividual IRI="#Utilisateur2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
-    </DataPropertyAssertion>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#a_pour_coach"/>
-        <ObjectProperty IRI="#suit"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#a_pour_suivi"/>
-        <ObjectProperty IRI="#est_suivi_par"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#lié_à"/>
-        <ObjectProperty IRI="#évalue"/>
-    </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#a_pour_coach"/>
-        <Class IRI="#Utilisateur"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#a_pour_suivi"/>
-        <Class IRI="#Objectif_de_Santé"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#associeOutil"/>
-        <Class IRI="#Ressource_de_Bien-Être"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#comprend"/>
-        <Class IRI="#Programme_de_Bien-Être"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#est_suivi_par"/>
-        <Class IRI="#Utilisateur"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#est_type"/>
-        <Class IRI="#Activité_Mentale"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#est_type"/>
-        <Class IRI="#Activité_Physique"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#lié_à"/>
-        <Class IRI="#Rapport_Mental"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#lié_à"/>
-        <Class IRI="#Rapport_Physique"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#organise"/>
-        <Class IRI="#Communauté"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#participerÀ"/>
-        <Class IRI="#Utilisateur"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#suit"/>
-        <Class IRI="#Coach"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#évalue"/>
-        <Class IRI="#Indicateur_de_Santé"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#a_pour_coach"/>
-        <Class IRI="#Coach"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#a_pour_suivi"/>
-        <Class IRI="#Suivi_Objectif"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#associeOutil"/>
-        <Class IRI="#Outil"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#comprend"/>
-        <Class IRI="#Activité"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#est_suivi_par"/>
-        <Class IRI="#Suivi_Objectif"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#est_type"/>
-        <Class IRI="#Programme_de_Bien-Être"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#lié_à"/>
-        <Class IRI="#Indicateur_de_Santé"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#organise"/>
-        <Class IRI="#Événement_de_Partage"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#participerÀ"/>
-        <Class IRI="#Discussion"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#suit"/>
-        <Class IRI="#Utilisateur"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#évalue"/>
-        <Class IRI="#Rapport_de_Santé"/>
-    </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="#comprend"/>
-        <ObjectProperty IRI="#est_type"/>
-    </DisjointObjectProperties>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#date"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#description_programme"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#description_sante"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#durée"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#email"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#fréquence"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#niveau"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#nom"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#nom_communauté"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#progrès"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#score"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#âge"/>
-    </FunctionalDataProperty>
-    <DataPropertyDomain>
-        <DataProperty IRI="#date"/>
-        <Class IRI="#Rapport_de_Santé"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#date_de_début"/>
-        <Class IRI="#Suivi_Objectif"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#date_de_fin"/>
-        <Class IRI="#Suivi_Objectif"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#decription_communauté"/>
-        <Class IRI="#Communauté"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#description"/>
-        <Class IRI="#Objectif_de_Santé"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#description_programme"/>
-        <Class IRI="#Activité"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#description_ressource"/>
-        <Class IRI="#Outil"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#description_sante"/>
-        <Class IRI="#Rapport_de_Santé"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#durée"/>
-        <Class IRI="#Activité"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#email"/>
-        <Class IRI="#Utilisateur"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#fréquence"/>
-        <Class IRI="#Programme_de_Bien-Être"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#niveau"/>
-        <Class IRI="#Indicateur_Mental"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#niveau"/>
-        <Class IRI="#Indicateur_Physique"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#nom"/>
-        <Class IRI="#Utilisateur"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#nom_Objectif_de_Santé"/>
-        <Class IRI="#Objectif_de_Santé"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#nom_communauté"/>
-        <Class IRI="#Communauté"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#nom_ressource"/>
-        <Class IRI="#Outil"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#progrès"/>
-        <Class IRI="#Suivi_Objectif"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#score"/>
-        <Class IRI="#Indicateur_de_Santé"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#spécialité"/>
-        <Class IRI="#Coach"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#sujet"/>
-        <Class IRI="#Discussion"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#typeCalcul"/>
-        <Class IRI="#Calculateur"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#typeEvaluation"/>
-        <Class IRI="#Test_de_Bien-Être"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#âge"/>
-        <Class IRI="#Utilisateur"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#date"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#date_de_début"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#date_de_fin"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#decription_communauté"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#description"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#description_programme"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#description_ressource"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#description_sante"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#durée"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#email"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#fréquence"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#niveau"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#nom"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#nom_Objectif_de_Santé"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#nom_communauté"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#nom_ressource"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#progrès"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#score"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#spécialité"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#sujet"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#typeEvaluation"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#âge"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-</Ontology>
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_coach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_coach">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#suit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_suivi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_suivi">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_suivi_par"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#associeOutil -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#associeOutil">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Ressource_de_Bien-Être"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#comprend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#comprend">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_type"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_suivi_par -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_suivi_par">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Mentale"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#lié_à -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#lié_à">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#évalue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Mental"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#organise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#organise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Événement_de_Partage"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#participerÀ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#participerÀ">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#suit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#suit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#évalue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#évalue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date_de_début -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date_de_début">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date_de_fin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date_de_fin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#decription_communauté -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#decription_communauté">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_programme -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_programme">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_ressource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_ressource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_sante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_sante">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#durée -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#durée">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#email">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#fréquence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#fréquence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#niveau -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#niveau">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_Objectif_de_Santé -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_Objectif_de_Santé">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_communauté -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_communauté">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_ressource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_ressource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#progrès -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#progrès">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#score -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#score">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#spécialité -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#spécialité">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#sujet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#sujet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#typeCalcul -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#typeCalcul">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Calculateur"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#typeEvaluation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#typeEvaluation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Test_de_Bien-Être"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#âge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#âge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Programmes"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Mentale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Mentale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Calculateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Calculateur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Calculateur"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Utilisateurs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Communautés"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Communautés"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Fil_de_Discussion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Fil_de_Discussion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_de_la_Santé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_de_la_Santé"/>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Communautés -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Communautés"/>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Objectifs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Objectifs"/>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Programmes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Programmes"/>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Ressources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Ressources"/>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Utilisateurs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Utilisateurs"/>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_Intérêt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_Intérêt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_de_Soutien"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_de_Soutien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_de_Soutien">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#organise"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Événement_de_Partage"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_de_la_Santé"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Mental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Mental">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_suivi"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Mental"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Physique"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Physique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Physique">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_suivi"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Objectifs"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Ressources"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#comprend"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#comprend"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Programmes"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Mental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Mental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#lié_à"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#lié_à"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_de_la_Santé"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Ressource_de_Bien-Être -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Ressource_de_Bien-Être">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Ressources"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Mental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Mental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Objectifs"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Test_de_Bien-Être -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Test_de_Bien-Être">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Test_de_Bien-Être"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Utilisateurs"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Événement_de_Partage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Événement_de_Partage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Course -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Course">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique"/>
+        <untitled-ontology-19:description_programme>Course à pied de 5 km</untitled-ontology-19:description_programme>
+        <untitled-ontology-19:description_programme rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</untitled-ontology-19:description_programme>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Méditation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Méditation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Mentale"/>
+        <untitled-ontology-19:description_programme>Séance de méditation guidée</untitled-ontology-19:description_programme>
+        <untitled-ontology-19:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</untitled-ontology-19:durée>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Apprendre_Méditation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Apprendre_Méditation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Mental"/>
+        <untitled-ontology-19:description>Objectif pour améliorer la concentration</untitled-ontology-19:description>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach1">
+        <untitled-ontology-19:nom>Amina</untitled-ontology-19:nom>
+        <untitled-ontology-19:spécialité>Nutrition</untitled-ontology-19:spécialité>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach2">
+        <untitled-ontology-19:nom>Riad</untitled-ontology-19:nom>
+        <untitled-ontology-19:spécialité>Santé mentale</untitled-ontology-19:spécialité>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#CommunauteBienEtre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#CommunauteBienEtre">
+        <untitled-ontology-19:organise rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Evenement1"/>
+        <untitled-ontology-19:decription_communauté>Groupe dédié au soutien mental et physique</untitled-ontology-19:decription_communauté>
+        <untitled-ontology-19:nom_communauté>Bien-Être et Santé</untitled-ontology-19:nom_communauté>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Courir_Marathon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Courir_Marathon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Physique"/>
+        <untitled-ontology-19:description>Objectif pour courir un marathon</untitled-ontology-19:description>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion1">
+        <untitled-ontology-19:sujet>Conseils pour une meilleure santé mentale</untitled-ontology-19:sujet>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Evenement1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Evenement1">
+        <untitled-ontology-19:sujet>Atelier de yoga pour débutants</untitled-ontology-19:sujet>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#GroupeYoga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#GroupeYoga">
+        <untitled-ontology-19:decription_communauté>Groupe pour les amateurs de yoga</untitled-ontology-19:decription_communauté>
+        <untitled-ontology-19:nom_communauté>Passion Yoga</untitled-ontology-19:nom_communauté>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#GuideNutrtion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#GuideNutrtion">
+        <untitled-ontology-19:associeOutil rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#IMCCalculateur"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#IMCCalculateur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#IMCCalculateur">
+        <untitled-ontology-19:description_ressource>Permet de calculer l&apos;indice de masse corporelle&quot; et typeCalcul &quot;Calcul de l&apos;IMC&quot;</untitled-ontology-19:description_ressource>
+        <untitled-ontology-19:nom_ressource>Calculateur d&apos;IMC</untitled-ontology-19:nom_ressource>
+        <untitled-ontology-19:typeCalcul>Calcul de l&apos;IMC</untitled-ontology-19:typeCalcul>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_BMI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_BMI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+        <untitled-ontology-19:niveau>Moyen</untitled-ontology-19:niveau>
+        <untitled-ontology-19:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.5</untitled-ontology-19:score>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Stress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Stress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental"/>
+        <untitled-ontology-19:niveau>Élevé</untitled-ontology-19:niveau>
+        <untitled-ontology-19:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.8</untitled-ontology-19:score>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#ProgrammeGestionStress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#ProgrammeGestionStress">
+        <untitled-ontology-19:associeOutil rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#TestStress"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet_Santé -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet_Santé">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet"/>
+        <untitled-ontology-19:comprend rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Course"/>
+        <untitled-ontology-19:comprend rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Méditation"/>
+        <untitled-ontology-19:description_programme>Programme de bien-être complet</untitled-ontology-19:description_programme>
+        <untitled-ontology-19:fréquence>Hebdomadaire</untitled-ontology-19:fréquence>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé_Yoga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé_Yoga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé"/>
+        <untitled-ontology-19:comprend rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Méditation"/>
+        <untitled-ontology-19:description_programme>Programme de yoga spécialisé</untitled-ontology-19:description_programme>
+        <untitled-ontology-19:fréquence>Mensuel</untitled-ontology-19:fréquence>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_BMI_Hebdomadaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_BMI_Hebdomadaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique"/>
+        <untitled-ontology-19:lié_à rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_BMI"/>
+        <untitled-ontology-19:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-07T14:00:00</untitled-ontology-19:date>
+        <untitled-ontology-19:description_sante>Rapport BMI hebdomadaire</untitled-ontology-19:description_sante>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Stress_Mensuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Stress_Mensuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Mental"/>
+        <untitled-ontology-19:lié_à rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Stress"/>
+        <untitled-ontology-19:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-15T10:30:00</untitled-ontology-19:date>
+        <untitled-ontology-19:description_sante>Rapport de stress mensuel</untitled-ontology-19:description_sante>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Course_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Course_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique"/>
+        <untitled-ontology-19:a_pour_suivi rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Courir_Marathon"/>
+        <untitled-ontology-19:est_suivi_par rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur2"/>
+        <untitled-ontology-19:progrès rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75</untitled-ontology-19:progrès>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Méditation_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Méditation_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Mental"/>
+        <untitled-ontology-19:a_pour_suivi rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Apprendre_Méditation"/>
+        <untitled-ontology-19:est_suivi_par rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur1"/>
+        <untitled-ontology-19:progrès rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-19:progrès>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#TestStress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#TestStress">
+        <untitled-ontology-19:description_ressource>Évaluation du niveau de stress</untitled-ontology-19:description_ressource>
+        <untitled-ontology-19:nom_ressource>Test de Stress</untitled-ontology-19:nom_ressource>
+        <untitled-ontology-19:typeEvaluation>Stress</untitled-ontology-19:typeEvaluation>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur1">
+        <untitled-ontology-19:a_pour_coach rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach1"/>
+        <untitled-ontology-19:participerÀ rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion1"/>
+        <untitled-ontology-19:email>sami@gmail.com</untitled-ontology-19:email>
+        <untitled-ontology-19:nom>Sami</untitled-ontology-19:nom>
+        <untitled-ontology-19:âge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-19:âge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur2">
+        <untitled-ontology-19:a_pour_coach rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach2"/>
+        <untitled-ontology-19:email>lina@gmail.com</untitled-ontology-19:email>
+        <untitled-ontology-19:nom>Lina</untitled-ontology-19:nom>
+        <untitled-ontology-19:âge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</untitled-ontology-19:âge>
+    </owl:NamedIndividual>
+</rdf:RDF>
 
 
 
