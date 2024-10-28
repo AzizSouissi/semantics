@@ -1,4 +1,4 @@
-package org.example.semantic.application.sante;
+package org.example.semantic.application.communaute;
 
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -32,10 +32,9 @@ public class ASK {
 
         // Définir les ressources à vérifier
         String[] resourcesToCheck = {
-                "Rapport_BMI_Hebdomadaire",
-                "Rapport_Stress_Mensuel",
-                "Indicateur_Stress",
-                "Indicateur_BMIi"
+                "CommunauteBienEtre",
+                "GroupeYoga",
+                "Discussion11"
         };
 
         // Lister les types de chaque ressource

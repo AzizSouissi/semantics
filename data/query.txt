@@ -8,3 +8,9 @@ WHERE {
   ?indicateur ns:score ?score .
   OPTIONAL { ?indicateur ns:niveau ?niveau . }
 }
+ASK {
+    {
+        SELECT ?s WHERE {
+            ?s rdf:type ns:Rapport_BMI_Hebdomadaire .
+        }
+    }

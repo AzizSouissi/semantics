@@ -1,15 +1,12 @@
 package org.example.semantic.application.sante;
 
-import org.apache.jena.query.QueryExecution;
-import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.RDF;
 import org.example.semantic.tools.JenaEngine;
 
 public class SELECT {
 
-    // Déclarer NS comme une variable de classe
     private static final String NS = "http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#";
 
     public static void main(String[] args) {
@@ -26,8 +23,11 @@ public class SELECT {
             addInstance(model, "Rapport_Anxiété", "Rapport_Mental", "Rapport sur l'anxiété moyenne", null);
 
             // Requêtes SPARQL pour obtenir les instances
-            executeQuery(model, "SELECT ?mentalIndicator WHERE { ?mentalIndicator rdf:type <" + NS + "Indicateur_Mental> . }", "mentalIndicator");
-            executeQuery(model, "SELECT ?mentalReport WHERE { ?mentalReport rdf:type <" + NS + "Rapport_Mental> . }", "mentalReport");
+            String queryMentalIndicator = String.format("SELECT ?mentalIndicator WHERE { ?mentalIndicator rdf:type <%sIndicateur_Mental> . }", NS);
+            executeQuery(model, queryMentalIndicator, "mentalIndicator");
+
+            String queryMentalReport = String.format("SELECT ?mentalReport WHERE { ?mentalReport rdf:type <%sRapport_Mental> . }", NS);
+            executeQuery(model, queryMentalReport, "mentalReport");
 
         } else {
             System.out.println("Erreur lors du chargement du modèle depuis l'ontologie.");
@@ -51,9 +51,16 @@ public class SELECT {
     }
 
     // Méthode pour exécuter la requête SPARQL et afficher les résultats
+// Méthode pour exécuter la requête SPARQL et afficher les résultats
     private static void executeQuery(Model model, String queryString, String variableName) {
-        try (QueryExecution qexec = QueryExecutionFactory.create(queryString, model)) {
+        // Ajouter le préfixe rdf à la requête
+        String prefixedQueryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " + queryString;
+
+        Query query = QueryFactory.create(prefixedQueryString);
+
+        try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
             ResultSet resultSet = qexec.execSelect();
+
             if (!resultSet.hasNext()) {
                 System.out.println("Aucune instance trouvée pour la requête : " + queryString);
             } else {
@@ -63,8 +70,9 @@ public class SELECT {
                 }
             }
         } catch (Exception e) {
-            System.out.println("Erreur lors de l'exécution de la requête: " + e.getMessage());
+            System.err.println("Erreur lors de l'exécution de la requête : " + e.getMessage());
             e.printStackTrace();
         }
     }
+
 }
