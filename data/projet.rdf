@@ -1,0 +1,524 @@
+<rdf:RDF
+    xmlns="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:untitled-ontology-19="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Objectifs"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Mental">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_suivi"/>
+        </owl:onProperty>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass>
+          <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Mental"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Physique"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Objectifs"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Événement_de_Partage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Calculateur">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Calculateur"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Ressources"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#lié_à"/>
+        </owl:onProperty>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#lié_à"/>
+        </owl:onProperty>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_de_la_Santé"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Utilisateurs"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Utilisateurs"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Communautés"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Programmes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Ressources"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Programmes"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#comprend"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Communautés"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Test_de_Bien-Être">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Test_de_Bien-Être"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Mental">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Fil_de_Discussion">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Physique">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_suivi"/>
+        </owl:onProperty>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass>
+          <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Utilisateurs"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Objectifs"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_de_Soutien">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#organise"/>
+        </owl:onProperty>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Événement_de_Partage"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_de_la_Santé"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Mentale">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#comprend"/>
+        </owl:onProperty>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Mental">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_Intérêt">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Groupe_de_Soutien"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Ressource_de_Bien-Être">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Ressources"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Gestion_des_Communautés"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#participerÀ">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_type">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Mentale"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_suivi">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_suivi_par"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#évalue">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#associeOutil">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Ressource_de_Bien-Être"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#a_pour_coach">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#suit"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#suit">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#lié_à">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#évalue"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Mental"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_suivi_par">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#organise">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Événement_de_Partage"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#comprend">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+    <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#est_type"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#score">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_de_Santé"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_ressource">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#sujet">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date_de_fin">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#durée">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_sante">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#email">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description_programme">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_communauté">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#âge">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#decription_communauté">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Communauté"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_ressource">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Outil"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#spécialité">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#niveau">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#description">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#typeEvaluation">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Test_de_Bien-Être"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date_de_début">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#fréquence">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_de_Bien-Être"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#progrès">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Objectif"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#nom_Objectif_de_Santé">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_de_Santé"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#date">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_de_Santé"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#typeCalcul">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Calculateur"/>
+  </owl:DatatypeProperty>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_BMI_Hebdomadaire">
+    <untitled-ontology-19:lié_à>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_BMI">
+        <untitled-ontology-19:niveau>Moyen</untitled-ontology-19:niveau>
+        <untitled-ontology-19:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >23.5</untitled-ontology-19:score>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Physique"/>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:lié_à>
+    <untitled-ontology-19:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-01-07T14:00:00</untitled-ontology-19:date>
+    <untitled-ontology-19:description_sante>Rapport BMI hebdomadaire</untitled-ontology-19:description_sante>
+    <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Physique"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#CommunauteBienEtre">
+    <untitled-ontology-19:organise>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Evenement1">
+        <untitled-ontology-19:sujet>Atelier de yoga pour débutants</untitled-ontology-19:sujet>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:organise>
+    <untitled-ontology-19:decription_communauté>Groupe dédié au soutien mental et physique</untitled-ontology-19:decription_communauté>
+    <untitled-ontology-19:nom_communauté>Bien-Être et Santé</untitled-ontology-19:nom_communauté>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé_Yoga">
+    <untitled-ontology-19:comprend>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Méditation">
+        <untitled-ontology-19:description_programme>Séance de méditation guidée</untitled-ontology-19:description_programme>
+        <untitled-ontology-19:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >1.5</untitled-ontology-19:durée>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Mentale"/>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:comprend>
+    <untitled-ontology-19:description_programme>Programme de yoga spécialisé</untitled-ontology-19:description_programme>
+    <untitled-ontology-19:fréquence>Mensuel</untitled-ontology-19:fréquence>
+    <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Spécialisé"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#ProgrammeGestionStress">
+    <untitled-ontology-19:associeOutil>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#TestStress">
+        <untitled-ontology-19:description_ressource>Évaluation du niveau de stress</untitled-ontology-19:description_ressource>
+        <untitled-ontology-19:nom_ressource>Test de Stress</untitled-ontology-19:nom_ressource>
+        <untitled-ontology-19:typeEvaluation>Stress</untitled-ontology-19:typeEvaluation>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:associeOutil>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet_Santé">
+    <untitled-ontology-19:comprend>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Course">
+        <untitled-ontology-19:description_programme>Course à pied de 5 km</untitled-ontology-19:description_programme>
+        <untitled-ontology-19:description_programme rdf:datatype=
+        "http://www.w3.org/2001/XMLSchema#double">2.0</untitled-ontology-19:description_programme>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Physique"/>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:comprend>
+    <untitled-ontology-19:comprend rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Activité_Méditation"/>
+    <untitled-ontology-19:description_programme>Programme de bien-être complet</untitled-ontology-19:description_programme>
+    <untitled-ontology-19:fréquence>Hebdomadaire</untitled-ontology-19:fréquence>
+    <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Programme_Complet"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#GroupeYoga">
+    <untitled-ontology-19:decription_communauté>Groupe pour les amateurs de yoga</untitled-ontology-19:decription_communauté>
+    <untitled-ontology-19:nom_communauté>Passion Yoga</untitled-ontology-19:nom_communauté>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Course_1">
+    <untitled-ontology-19:a_pour_suivi>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Courir_Marathon">
+        <untitled-ontology-19:description>Objectif pour courir un marathon</untitled-ontology-19:description>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Physique"/>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:a_pour_suivi>
+    <untitled-ontology-19:est_suivi_par>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur2">
+        <untitled-ontology-19:a_pour_coach>
+          <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach2">
+            <untitled-ontology-19:nom>Riad</untitled-ontology-19:nom>
+            <untitled-ontology-19:spécialité>Santé mentale</untitled-ontology-19:spécialité>
+          </owl:NamedIndividual>
+        </untitled-ontology-19:a_pour_coach>
+        <untitled-ontology-19:email>lina@gmail.com</untitled-ontology-19:email>
+        <untitled-ontology-19:nom>Lina</untitled-ontology-19:nom>
+        <untitled-ontology-19:âge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >25</untitled-ontology-19:âge>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:est_suivi_par>
+    <untitled-ontology-19:progrès rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >75</untitled-ontology-19:progrès>
+    <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Physique"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#GuideNutrtion">
+    <untitled-ontology-19:associeOutil>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#IMCCalculateur">
+        <untitled-ontology-19:description_ressource>Permet de calculer l'indice de masse corporelle" et typeCalcul "Calcul de l'IMC"</untitled-ontology-19:description_ressource>
+        <untitled-ontology-19:nom_ressource>Calculateur d'IMC</untitled-ontology-19:nom_ressource>
+        <untitled-ontology-19:typeCalcul>Calcul de l'IMC</untitled-ontology-19:typeCalcul>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:associeOutil>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Stress_Mensuel">
+    <untitled-ontology-19:lié_à>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Stress">
+        <untitled-ontology-19:niveau>Élevé</untitled-ontology-19:niveau>
+        <untitled-ontology-19:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >5.8</untitled-ontology-19:score>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Indicateur_Mental"/>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:lié_à>
+    <untitled-ontology-19:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2023-01-15T10:30:00</untitled-ontology-19:date>
+    <untitled-ontology-19:description_sante>Rapport de stress mensuel</untitled-ontology-19:description_sante>
+    <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Rapport_Mental"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Méditation_1">
+    <untitled-ontology-19:a_pour_suivi>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Apprendre_Méditation">
+        <untitled-ontology-19:description>Objectif pour améliorer la concentration</untitled-ontology-19:description>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Objectif_Mental"/>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:a_pour_suivi>
+    <untitled-ontology-19:est_suivi_par>
+      <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Utilisateur1">
+        <untitled-ontology-19:a_pour_coach>
+          <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Coach1">
+            <untitled-ontology-19:nom>Amina</untitled-ontology-19:nom>
+            <untitled-ontology-19:spécialité>Nutrition</untitled-ontology-19:spécialité>
+          </owl:NamedIndividual>
+        </untitled-ontology-19:a_pour_coach>
+        <untitled-ontology-19:participerÀ>
+          <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Discussion1">
+            <untitled-ontology-19:sujet>Conseils pour une meilleure santé mentale</untitled-ontology-19:sujet>
+          </owl:NamedIndividual>
+        </untitled-ontology-19:participerÀ>
+        <untitled-ontology-19:email>sami@gmail.com</untitled-ontology-19:email>
+        <untitled-ontology-19:nom>Sami</untitled-ontology-19:nom>
+        <untitled-ontology-19:âge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >30</untitled-ontology-19:âge>
+      </owl:NamedIndividual>
+    </untitled-ontology-19:est_suivi_par>
+    <untitled-ontology-19:progrès rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >50</untitled-ontology-19:progrès>
+    <rdf:type rdf:resource="http://www.semanticweb.org/daghnouj/ontologies/2024/9/untitled-ontology-19#Suivi_Mental"/>
+  </owl:NamedIndividual>
+</rdf:RDF>
